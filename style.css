@@ -1,0 +1,172 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+body{
+ background-color: #031135; 
+}
+.container{
+    display: flex;
+    min-width: 760px;
+}
+.players{
+    width: 120px;
+    height: 400px;
+    background: rgba(0,0,0,.5);
+    margin-top: 50px;
+    border-radius: 0 20px 20px 0;
+    padding: 25px 10px;
+}
+.player1 , .player2{
+    width: 100px;
+    height: 120px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid ;
+    box-shadow: 0 0 15px inset;
+    text-align: center;
+    color: darkcyan;
+}
+.player span{
+    font-family: fantasy;
+    font-size: 16pt;
+    color: aliceblue;
+    text-shadow: 1px 1px 3px black
+}
+.PlayerA{
+    background-color: darkred !important ;
+}
+.PlayerB{
+    background-color: darkgreen !important;
+}
+.vs{
+    width: 70px;
+    height: 100px;
+    color: darkcyan;
+    font-family: Impact;
+    font-size: 50pt;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    text-shadow: 0 0 2px blue;
+}
+.gameBoard{
+    width: 640px;
+    height: 640px;
+    background-color: darkgray;
+    padding: 15px 10px 10px 15px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 15px black;
+    margin: auto;
+    transform: scale(.9);
+}
+.hr{
+    width: 70px;
+    height: 15px;
+
+}
+.vr{
+   width: 15px;
+   height: 70px;
+   
+}
+.line{
+    background: black;
+    float: left;
+    opacity: .6;
+    cursor:pointer;
+    border-radius: 2px;
+}
+.line:hover{
+    opacity: .7;
+}
+.clicked{
+    background-color: darkcyan;
+    box-shadow: inset 0 0 5px black;
+    opacity: 1;
+}
+.clicked:hover{
+    opacity: 1 !important;
+}
+.Point{
+    width: 13px;
+    height: 13px;
+    background: darkcyan;  
+    float: left;
+    margin: 1px;
+    border-radius: 2px;
+    box-shadow: inset 0px 0px 3px black;
+}
+.comp{
+    width: 70px;
+    height: 70px;
+    float: left;
+    background-color: rgba(0,0,0,.2);
+    box-shadow: inset 0 0 10px darkcyan;
+    font-size: 30pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: impact;
+    color: aliceblue;
+    text-shadow: 1px 1px 2px black;
+}
+.finished{
+    width: 100%;
+    height: 250px;
+    margin-top: 100px;
+    background: rgba(250,250,250,.5);
+    position: absolute;
+    margin-left: -15px;
+    font-size: 50pt;
+    text-align: center;
+    font-family: fantasy;
+    color: darkorange;
+    text-shadow: 2px 2px 3px black;
+    display: none ;
+}
+
+.finished > button{
+    width: 200px;
+    height: 50px;
+    font-size: 20pt;
+    margin-top: 30px;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 0 0 3px black;
+    cursor: pointer;
+    transition: .3s;
+    font-weight: bold;
+    text-shadow:  1px 1px 2px black;
+}
+.finished > button:hover{
+    background-color: gainsboro;
+    color: darkorange;
+}
+.finished > button:active{
+    color: yellow;
+    width: 204px;
+}
+.winner , .loser{
+    font-size: 40pt;
+    color: black;
+     text-shadow:0 0 0
+}
+.winning , .losing{
+    font-size: 30pt;
+     text-shadow: 2px 2px 3px black
+}
+.winning{
+    color: yellow;
+}
+.losing{
+    color: red;
+}
+.players span:last-of-type{
+    color:greenyellow;
+    font-size: 12pt;
+    font-family: monospace;
+}
+
