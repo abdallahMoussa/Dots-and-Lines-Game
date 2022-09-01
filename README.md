@@ -8,3 +8,5 @@ Tech:
 -JavaScript
 -jQuery
 
+LIVE DEMO: 
+https://bri-game.vercel.app/
