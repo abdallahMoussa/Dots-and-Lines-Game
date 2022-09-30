@@ -1,6 +1,7 @@
 $(function(){
 
 
+
     var x = 8 ,
         hr = $("<div></div>"),
         ceil = $("<div></div>"),
@@ -59,7 +60,6 @@ $(function(){
 
                                     
     $(".line").click(function(){
-        
         var index = $(this).attr("id");
         index *=1; 
         $(this).attr('value','clicked').addClass('clicked');
@@ -255,5 +255,31 @@ $(function(){
         window.location.reload()
     })
 
+    
+  /* assist*/
+  
+  function assist (){
+    $($(line)[0]).animate({
+        'opacity':'1'
+    },800,()=>{
+        $($(line)[0]).animate({
+            'opacity':'.3'
+        },800)
+    })
+  }
+  let flagAssist=0 ; 
+
+  let interval=setInterval(()=>{
+    if(flagAssist>3){
+        clearInterval(interval)
+        $($(line)[0]).animate({
+            'opacity':'.6'
+        },800)
+    }else{
+        assist()
+        flagAssist++;
+        
+    }
+  },2000)
 
 });
